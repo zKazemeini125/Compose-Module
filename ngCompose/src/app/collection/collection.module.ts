@@ -2,13 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CollectionRoutingModule } from './collection-routing.module';
-
+import { CollecHomeComponent } from './collec-home/collec-home.component';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule,
-    CollectionRoutingModule
-  ]
+  declarations: [CollecHomeComponent],
+  imports: [CommonModule, CollectionRoutingModule],
+  exports: [CollecHomeComponent],
 })
-export class CollectionModule { }
+export class CollectionModule {}
