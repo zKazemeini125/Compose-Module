@@ -17,11 +17,11 @@ import { NotFoundComponent } from './not-found/not-found.component';
   declarations: [AppComponent, HomeComponent, NotFoundComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     ElementsModule,
     CollectionModule,
     AppViewsModule,
     ModsModule,
+    AppRoutingModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
