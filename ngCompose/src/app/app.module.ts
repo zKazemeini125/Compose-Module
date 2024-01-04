@@ -8,10 +8,17 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
 import { CollectionModule } from './collection/collection.module';
+import { AppViewsModule } from './app-views/app-views.module';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ElementsModule, CollectionModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    ElementsModule,
+    CollectionModule,
+    AppViewsModule,
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
