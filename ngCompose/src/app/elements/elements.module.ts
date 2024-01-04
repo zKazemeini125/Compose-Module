@@ -8,6 +8,5 @@ import { ElEnterComponent } from './el-enter/el-enter.component';
 @NgModule({
   declarations: [ElHomeComponent, ElEnterComponent],
   imports: [CommonModule, ElementsRoutingModule],
-  exports: [ElHomeComponent],
 })
 export class ElementsModule {}

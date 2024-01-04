@@ -7,6 +7,5 @@ import { CollecHomeComponent } from './collec-home/collec-home.component';
 @NgModule({
   declarations: [CollecHomeComponent],
   imports: [CommonModule, CollectionRoutingModule],
-  exports: [CollecHomeComponent],
 })
 export class CollectionModule {}
