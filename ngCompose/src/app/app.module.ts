@@ -9,15 +9,19 @@ import { AppComponent } from './app.component';
 import { ElementsModule } from './elements/elements.module';
 import { CollectionModule } from './collection/collection.module';
 import { AppViewsModule } from './app-views/app-views.module';
+import { ModsModule } from './mods/mods.module';
+import { HomeComponent } from './home/home.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, HomeComponent, NotFoundComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ElementsModule,
     CollectionModule,
     AppViewsModule,
+    ModsModule,
   ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
