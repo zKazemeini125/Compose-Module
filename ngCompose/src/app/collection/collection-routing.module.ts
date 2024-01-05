@@ -2,9 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { CollecHomeComponent } from './collec-home/collec-home.component';
 
-const routes: Routes = [
-  { path: 'collections', component: CollecHomeComponent },
-];
+const routes: Routes = [{ path: '', component: CollecHomeComponent }];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
