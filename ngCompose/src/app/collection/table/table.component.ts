@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, Input } from "@angular/core";
 
 @Component({
-  selector: 'app-table',
-  templateUrl: './table.component.html',
-  styleUrl: './table.component.css'
+  selector: "app-table",
+  templateUrl: "./table.component.html",
+  styleUrl: "./table.component.css",
 })
 export class TableComponent {
-
+  @Input() headers: any = [];
+  @Input() datas: any = [];
 }

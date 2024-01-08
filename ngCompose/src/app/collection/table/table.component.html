@@ -1,1 +1,15 @@
-<p>table works!</p>
+<table class="ui basic table">
+    <thead>
+        <tr>
+            <ng-container *ngFor="let header of headers">
+                <th *ngIf="header.visible">{{header.value}}</th>
+            </ng-container>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let data of datas">
+            <td *ngFor="let header of headers">{{data[header.key]}}</td>
+
+        </tr>
+    </tbody>
+</table>
