@@ -12,9 +12,10 @@ import { AppViewsModule } from './app-views/app-views.module';
 import { ModsModule } from './mods/mods.module';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { StatisticComponent } from './statistic/statistic.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, NotFoundComponent],
+  declarations: [AppComponent, HomeComponent, NotFoundComponent, StatisticComponent],
   imports: [
     BrowserModule,
     //ElementsModule,
