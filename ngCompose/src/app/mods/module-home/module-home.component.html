@@ -1,2 +1,7 @@
 <app-divider>Modals</app-divider>
-<app-modal></app-modal>
+<button class="button green" (click)="OnChangeModal()">Show modal</button>
+<app-modal (OnClose)="OnChangeModal()" *ngIf="showModal">
+    <i modal-icon class="setting icon">
+    </i>
+    <p modal-content>Would you like to save this changes?</p>
+</app-modal>

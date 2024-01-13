@@ -1,1 +1,24 @@
-<p>modal works!</p>
+<div class="ui dimmer modals page transition visible active"
+    style="display: flex !important;" (click)="OnCloseModal()">
+    <div (click)="$event.stopPropagation()"
+        class="ui small basic test modal transition visible active"
+        style="display: block !important;">
+        <div class="ui icon header">
+            <ng-content select="[modal-icon]"></ng-content>
+        </div>
+        <div class="content">
+            <ng-content selevt="[modal-content]"></ng-content>
+        </div>
+        <div class="actions">
+            <div class="ui red basic cancel inverted button"
+                (click)="OnCloseModal()">
+                <i class="remove icon"></i>
+                No
+            </div>
+            <div (click)="OnCloseModal()" class="ui green ok inverted button">
+                <i class="checkmark icon"></i>
+                Yes
+            </div>
+        </div>
+    </div>
+</div>
