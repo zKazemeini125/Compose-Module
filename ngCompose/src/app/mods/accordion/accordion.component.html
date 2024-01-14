@@ -1,1 +1,15 @@
-<p>accordion works!</p>
+<div class="ui styled fluid accordion">
+    <ng-container *ngFor="let item of items; let i=index">
+        <div [ngClass]="{active: i===openItemIndex}" class="title"
+            (click)="OnChangeItem(i)">
+            <i class="dropdown icon"></i>
+            {{item.title}}
+        </div>
+        <div class="content"
+            [ngClass]="{active: i===openItemIndex}">
+            <p class="transition visible">
+                {{item.content}}
+            </p>
+        </div>
+    </ng-container>
+</div>
