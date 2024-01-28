@@ -1,0 +1,9 @@
+.content {
+    border: none !important;
+    box-shadow: none !important;
+    padding: 5px;
+}
+
+.twelve {
+    padding-left: 0 !important;
+}
