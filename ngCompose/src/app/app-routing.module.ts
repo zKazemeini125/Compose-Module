@@ -28,6 +28,11 @@ const routes: Routes = [
     loadChildren: () =>
       import("./settings/settings.module").then((m) => m.SettingsModule),
   },
+  {
+    path: "services",
+    loadChildren: () =>
+      import("./services/services.module").then((m) => m.ServicesModule),
+  },
   { path: "home", component: HomeComponent },
   { path: "", redirectTo: "/home", pathMatch: "full" },
   { path: "not-found", component: NotFoundComponent },
