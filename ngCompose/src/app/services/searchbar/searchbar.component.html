@@ -1,1 +1,8 @@
-<p>searchbar works!</p>
+<form class="form" (submit)="OnSubmit($event)">
+    <div class="input-group mb-2">
+        <input type="text" class="form-control" placeholder="type here"
+            (input)="OnChangeInput($any($event.target).value)">
+        <span class="input-group-text" (click)="OnSubmit($event)">
+            <i class="fa-solid fa-magnifying-glass"></i></span>
+    </div>
+</form>
